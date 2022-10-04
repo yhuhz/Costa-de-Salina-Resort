@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #000;
+}
+
+.landingPage {
+  
+  background-image: url("../images/Background/Reservation 2.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.topBar {
+  position: fixed;
+  background-color: #fffada;
+  overflow: hidden;
+  width: 100%;
+}
+
+.topBar h4 {
+  display: inline-block;
+  text-align: center;
+  padding: 8px 16px 0px 16px;
+  font-size: 30px;
+  font-family: 'Cedarville Cursive', cursive;
+  color: #0061A8;
+}
+
+.topBar img {
+  left: 45%;
+  position: fixed;
+  border-radius: 6px;
+}
+
+#float_right {
+  float: right;
+  text-align: center;
+  padding: 12px 0px 0px 16px;
+}
+
+.topBar a {
+  color: #121111;
+  text-align: center;
+  text-decoration: none;
+  margin: 25px;
+  font-size: 17px;
+  font-family: 'Mulish', sans-serif;
+}
+
+.topBar a:hover {
+  color: #0061A8;
+  
+}
+
+.topBar #bookBtn {
+  padding: 14px;
+  margin: 0;
+  background-color: #0061A8;
+  color: rgb(255, 255, 255);
+  border-left: 0px;
+}
+/*
+.topBar #bookBtn:hover {
+  padding: 14px;
+  margin: 0;
+  background-color: rgba(248, 214, 101, 0.942);
+  color: black;
+}
+*/
+
+.container { 
+  margin-top: 20vh;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "reservation-form"
+    "slideshow"
+    "slideshow"
+    "slideshow"
+    "slideshow";
+}
+
+.slideshow {
+  grid-area: slideshow;
+  max-height: 600px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border: 1px solid #00000048;
+}
+
+.reservation-form {
+  grid-area: reservation-form;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.226);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-form form, .reservation-form h3 {
+  text-align: center;
+}
+
+.reservation-form h3 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Cedarville Cursive', cursive;
+  color: #0061A8;
+}
+
+#fset {
+  padding: 2px 20px 10px !important;
+  float: left;
+  width: auto;
+  border: 1px solid #0061A8 !important;
+  margin: 10px;
+  height: 100px;
+}
+
+#fset h4 {
+  color: #0061A8;
+  font-weight: 600;
+  font-family: 'Mulish', sans-serif;
+}
+
+#fset_legend {
+  font-family: "Poppins" , sans-serif;
+  float: none;
+  padding: 0 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#fset input {
+  color: #000;
+  background-color: #fff;
+  border-style: none;
+  padding: 0 10px;
+  font-family: 'Mulish', sans-serif;
+}
+
+#package {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border-style: none;
+}
+
+#end_date {
+  margin-bottom: 10px;
+}
+
+.submit_btn {
+  float: left;
+  padding: 40px 10px;
+  font-family: 'Mulish', sans-serif;
+}
+
+.submit_btn button {
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 20px;
+  border-style: none;
+  background-color: #0061A8;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1366px) {
+  .topBar img {
+      height: 20vh;
+      width: 10vw;
+      transform: translateY(10%);
+  }
+
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .topBar img {
+      transform: scale(0.0);
+  }
+
+  .topBar #bookBtn {
+      padding: 2vh;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  
+  .topBar img {
+  left: 0%;
+  width: 20%;
+  height: 10%;
+  transform: translateX(10%);
+  }
+
+  .topBar #bookBtn {
+      padding: 5px;
+  }
+
+  .topBar h4 {
+      padding: 2vh 0 0 25vw;
+  }
+
+}
