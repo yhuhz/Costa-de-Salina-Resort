@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #000;
+}
+
+.landingPage {
+    /*
+    background-image: url("../images/beach3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.topBar {
+    position: fixed;
+    background-color: #fffada;
+    overflow: hidden;
+    width: 100%;
+}
+
+.topBar h4 {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16px 0px 16px;
+    font-size: 30px;
+    font-family: 'Cedarville Cursive', cursive;
+    color: #0061A8;
+}
+
+.topBar img {
+    left: 45%;
+    position: fixed;
+    border-radius: 6px;
+}
+
+#float_right {
+    float: right;
+    text-align: center;
+    padding: 12px 0px 0px 16px;
+}
+
+.topBar a {
+    color: #121111;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px;
+    font-size: 17px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.topBar a:hover {
+    color: #0061A8;
+    
+}
+
+.topBar #bookBtn {
+    padding: 14px;
+    margin: 0;
+    background-color: #0061A8;
+    color: rgb(255, 255, 255);
+    border-left: 0px;
+}
+
+.topBar #bookBtn:hover {
+    padding: 14px;
+    margin: 0;
+    background-color: rgba(248, 214, 101, 0.942);
+    color: black;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    z-index: -1;
+}
+
+#myVideo {
+    /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.centerText {
+    display: block;
+    margin-top: 30vh;
+    color:rgb(254, 255, 255);
+    
+}
+
+.centerText h1 {
+    padding: 10px 10px;
+    text-align: center;
+    width: 30%;
+    background-color: rgba(38, 51, 54, 0.592);
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centerText button {
+    color: #fefbf7;
+    background-color: #0061A8 ;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    padding: 10px 30px;
+    position: relative;
+    left: 8%;
+    font-size: 1vw;
+    border: 0;
+}
+
+.centerText button:hover {
+    background-color: rgba(248, 214, 101, 0.942);
+    color: black;
+}
+
+@media screen and (max-width: 1366px) {
+    .topBar img {
+        height: 20vh;
+        width: 10vw;
+        transform: translateY(10%);
+    }
+
+    .centerText {
+        margin-top: 40vh;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .topBar img {
+        transform: scale(0.0);
+    }
+
+    .topBar #bookBtn {
+        padding: 2vh;
+    }
+
+    .centerText h1 {
+        padding: 5px 5px;
+        width: 70%;
+        font-size: 5vw;
+    }
+
+    .centerText button {
+        font-weight: 200;
+        padding: 10px;
+        left: 15%;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .topBar img {
+    left: 0%;
+    width: 20%;
+    height: 10%;
+    transform: translateX(10%);
+    }
+
+    .topBar #bookBtn {
+        padding: 5px;
+    }
+
+    .topBar h4 {
+        padding: 2vh 0 0 25vw;
+    }
+
+    .centerText h1 {
+        padding: 5px 5px;
+        width: 100%;
+        font-size: 7vw;
+    }
+
+    .centerText button {
+        font-weight: 200;
+        padding: 10px;
+        left: 20%;
+        font-size: 5vw;
+    }
+
+}
