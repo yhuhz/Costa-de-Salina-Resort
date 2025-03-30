@@ -47,7 +47,6 @@
                     <a href="index.php">Home</a>
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact us</a>
-                    <a href="#" id="review">Reviews</a>
                     <a id="bookBtn">Welcome <?php echo $username; ?></a>
                 </div>
             </div>
